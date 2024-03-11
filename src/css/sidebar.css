@@ -1,0 +1,47 @@
+
+.side-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  border-right: var(--border);
+  z-index: 1200;
+}
+
+.side-bar #close-btn {
+  text-align: right;
+  padding: 2rem;
+  display: none;
+}
+
+.side-bar #close-btn i {
+  font-size: 2.5rem;
+  background: var(--red);
+  border-radius: 0.5rem;
+  color: var(--white);
+}
+
+.side-bar .navbar a {
+  display: block;
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+.side-bar .navbar a i {
+  margin-right: 1.5rem;
+  transition: 0.2s linear;
+}
+
+.side-bar .navbar a:hover {
+  background-color: var(--light-bg);
+}
+
+.side-bar .navbar a:hover i {
+  margin-right: 2.5rem;
+}
+
+.side-bar.active {
+  left: -30rem;
+}
+
+/* Add more styles as needed */
